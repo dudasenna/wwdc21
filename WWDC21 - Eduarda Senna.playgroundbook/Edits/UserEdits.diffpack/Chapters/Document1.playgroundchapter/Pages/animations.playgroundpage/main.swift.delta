@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>LoadLevel1()
+// PLEASE, PRESS THE BUTTON "RUN MY CODE"
+</string>
+			<key>ModifiedRange</key>
+			<string>{6710, 55}</string>
+			<key>OriginalContent</key>
+			<string>import SpriteKit
+
+setUpLiveView()
+
+// /*#-localizable-zone(shapes1)*/Creates a circle sprite./*#-end-localizable-zone*/
+let circle = Graphic.circle(radius: 75, color: Color.random())
+scene.place(circle, at: Point(x: 200, y: 0))
+
+// /*#-localizable-zone(shapes2)*/Creates a polygon sprite./*#-end-localizable-zone*/
+let polygon = Graphic.polygon(radius: 75, sides: 7, color: Color.random())
+scene.place(polygon, at: Point(x: -200, y: 0))
+
+// /*#-localizable-zone(shapes3)*/Makes the circle draggable./*#-end-localizable-zone*/
+circle.isDraggable = true
+
+// /*#-localizable-zone(shapes4)*/Creates an animation on touch down./*#-end-localizable-zone*/
+circle.setHandler(for: .touch) { _ in
+    circle.backgroundColor = circle.backgroundColor.darker()
+    circle.scale(to: 1.1, duration: 0.2)
+    circle.backgroundColor = Color.random()
+}
+
+// /*#-localizable-zone(shapes5)*/Returns the circle to normal scale on touch up./*#-end-localizable-zone*/
+circle.setHandler(for: .touchUp) { _ in
+    circle.backgroundColor = Color.random()
+    circle.scale(to: 1, duration: 0.2)
+}
+
+// /*#-localizable-zone(shapes6)*/Creates an SKAction sequence to animate the polygon./*#-end-localizable-zone*/
+let rotateAction = SKAction.rotate(byAngle: 3.3, duration: 0.3)
+let snapBack = SKAction.rotate(byAngle: -0.25, duration: 0.2)
+let sequence = SKAction.sequence([rotateAction, snapBack])
+
+// /*#-localizable-zone(shapes7)*/Runs the animation sequence when the user taps the polygon./*#-end-localizable-zone*/
+polygon.setHandler(for: .touch) { _ in
+    polygon.run(sequence)
+}
+</string>
+			<key>OriginalRange</key>
+			<string>{6710, 1556}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

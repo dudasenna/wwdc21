@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>LoadInitialScreen()
+// PLEASE, PRESS THE BUTTON "RUN MY CODE"
+</string>
+			<key>ModifiedRange</key>
+			<string>{6711, 62}</string>
+			<key>OriginalContent</key>
+			<string>// /*#-localizable-zone(shapeGraphics1)*/Sets up the LiveView./*#-end-localizable-zone*/
+setUpLiveView()
+
+// /*#-localizable-zone(shapeGraphics2)*/Creates a label./*#-end-localizable-zone*/
+let label = Label(text: /*#-localizable-zone(shapeGraphicsHelloWorld)*/"Hello, World!"/*#-end-localizable-zone*/, color: #colorLiteral(red: 1.0008043050765991, green: 0.4036714434623718, blue: 0.6243900656700134, alpha: 1.0), font: .Futura, size: 35)
+scene.place(label, at: Point(x: 0, y: 350))
+
+// /*#-localizable-zone(shapeGraphics3)*/Creates a polygon graphic./*#-end-localizable-zone*/
+let polygon = Graphic.polygon(radius: 40, sides: 6, color: #colorLiteral(red: 1.0, green: 0.5502503514, blue: 0.5088998675, alpha: 1.0))
+scene.place(polygon, at: Point(x: 0, y: 250))
+
+// /*#-localizable-zone(shapeGraphics4)*/Creates a rectangle graphic./*#-end-localizable-zone*/
+let rect = Graphic.rectangle(width: 125, height: 75, cornerRadius: 20, color: #colorLiteral(red: 1.0, green: 0.778349638, blue: 0.4654855132, alpha: 1.0))
+scene.place(rect, at: Point(x: 0, y: 125))
+
+// /*#-localizable-zone(shapeGraphics5)*/Creates a circle graphic./*#-end-localizable-zone*/
+let circle = Graphic.circle(radius: 50, color: #colorLiteral(red: 0.3681973815, green: 0.186875701, blue: 0.9226484895, alpha: 1.0))
+scene.place(circle, at: Point.zero)
+
+// /*#-localizable-zone(shapeGraphics6)*/Creates a line graphic./*#-end-localizable-zone*/
+let line = Graphic.line(start: Point(x: -100, y: -100), end: Point(x: 100, y: -100), thickness: 5, color: #colorLiteral(red: 0.5279856324, green: 0.3070980608, blue: 0.9949815869, alpha: 1.0))
+scene.place(line)
+
+// /*#-localizable-zone(shapeGraphics7)*/Creates an image graphic./*#-end-localizable-zone*/
+let emoji = Graphic(image: "🦥".image())
+scene.place(emoji, at: Point(x: 0, y: -175))
+
+// /*#-localizable-zone(shapeGraphics8)*/Creates a custom shape graphic./*#-end-localizable-zone*/
+let customShape = Graphic.customShape(path: oddShape(), color: #colorLiteral(red: 0.2275036573, green: 0.5323064327, blue: 0.9950136542, alpha: 1.0))
+scene.place(customShape, at: Point(x: 0, y: -325))
+
+</string>
+			<key>OriginalRange</key>
+			<string>{6711, 2106}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>LoadFinalScreen()
+// PLEASE, PRESS THE BUTTON "RUN MY CODE"
+</string>
+			<key>ModifiedRange</key>
+			<string>{6711, 60}</string>
+			<key>OriginalContent</key>
+			<string>setUpLiveView(presentation: .aspectFitMinimum)
+
+// /*#-localizable-zone(shapesSprites)*/Creates a SpritePlayground from SpritePlayground.swift./*#-end-localizable-zone*/
+let playground = SpritePlayground()
+</string>
+			<key>OriginalRange</key>
+			<string>{6711, 206}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
